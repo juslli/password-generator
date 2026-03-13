@@ -10,14 +10,36 @@
 
   <div class="container">
     <h1>Gerador de Senhas</h1>
-    <p>Crie senhas seguras com um clique</p>
+    <p>Crie senhas seguras e personalizadas</p>
 
     <div class="senha-box">
       <input type="text" id="senha" readonly placeholder="Sua senha aparecerá aqui">
       <button id="copiar">Copiar</button>
     </div>
 
+    <div class="config">
+      <label for="tamanho">Tamanho da senha: <span id="valor-tamanho">12</span></label>
+      <input type="range" id="tamanho" min="4" max="30" value="12">
+
+      <label class="check-item">
+        <input type="checkbox" id="maiusculas" checked>
+        Incluir letras maiúsculas
+      </label>
+
+      <label class="check-item">
+        <input type="checkbox" id="numeros" checked>
+        Incluir números
+      </label>
+
+      <label class="check-item">
+        <input type="checkbox" id="simbolos" checked>
+        Incluir símbolos
+      </label>
+    </div>
+
     <button id="gerar">Gerar Senha</button>
+
+    <p id="mensagem"></p>
   </div>
 
   <script src="script.js"></script>
