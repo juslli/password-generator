@@ -6,21 +6,22 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(135deg, #0f172a, #1e293b);
   color: white;
+  padding: 20px;
 }
 
 .container {
   background: #111827;
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 0 0 25px rgba(0,0,0,0.4);
-  width: 90%;
-  max-width: 400px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 420px;
   text-align: center;
 }
 
@@ -30,14 +31,13 @@ body {
 }
 
 .container p {
-  margin-bottom: 20px;
   color: #cbd5e1;
 }
 
 .senha-box {
   display: flex;
   gap: 10px;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 .senha-box input {
@@ -68,4 +68,41 @@ body {
 
 #gerar {
   width: 100%;
+  margin-top: 20px;
+}
+
+.config {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.config label {
+  display: block;
+  margin-bottom: 8px;
+  color: #e5e7eb;
+}
+
+#tamanho {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.check-item {
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.check-item input {
+  width: 16px;
+  height: 16px;
+}
+
+#mensagem {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #86efac;
+  min-height: 20px;
 }
